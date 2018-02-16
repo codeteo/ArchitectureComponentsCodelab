@@ -11,6 +11,7 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] /home/teo/.gradle/caches/t
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/b26b2a3c9bdd7d002f622c02bcf1356b/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/teo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/ca5f02718f0cdcec8f6350cd34ed442e/AndroidManifest.xml:2:1-11:12
 MERGED from [com.firebase:firebase-jobdispatcher:0.7.0] /home/teo/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.7.0.aar/cb72b816f542a4a67ce4eb251c814ce9/AndroidManifest.xml:17:1-42:12
+MERGED from [android.arch.persistence.room:runtime:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24f3a9efebaab4121e3c5c19c0c628fc/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-v4:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/1ed012e651d32f2d92fceaea850c97e9/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/effa0bf64109a328f9f212bfe6a3937f/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/66aa827d892795611cc700cf1f41b23e/AndroidManifest.xml:17:1-28:12
@@ -19,6 +20,9 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /home/teo/.gradle/cache
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/60b4a2770f9bba3b08c4a67c9e2dfd80/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/fa4ba856f56c48d64235028c297a85db/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/41c9d152ea56c6402ad5951b7f4f3557/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.persistence:db-framework:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/db-framework-1.0.0.aar/9c4992caf8441031604f11ad4ff24f73/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.persistence:db:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/db-1.0.0.aar/6e2664f580041d768cb4d0255a07d060/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.core:runtime:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ec48325fccf16639bcc9d9e5268e6a84/AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7c0ed455a25a701b8b455d0d27f3e64a/AndroidManifest.xml:17:1-30:12
 INJECTED from /home/teo/Development/AndroidWorkspace/CodeLabs/ArchComponents/architectureComponentsSunshineStartingCode/architectureComponentsSunshineStartingCode/app/src/main/AndroidManifest.xml:17:1-70:12
 INJECTED from /home/teo/Development/AndroidWorkspace/CodeLabs/ArchComponents/architectureComponentsSunshineStartingCode/architectureComponentsSunshineStartingCode/app/src/main/AndroidManifest.xml:17:1-70:12
@@ -153,6 +157,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/teo/.
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/teo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/ca5f02718f0cdcec8f6350cd34ed442e/AndroidManifest.xml:5:5-7:41
 MERGED from [com.firebase:firebase-jobdispatcher:0.7.0] /home/teo/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.7.0.aar/cb72b816f542a4a67ce4eb251c814ce9/AndroidManifest.xml:22:5-24:41
 MERGED from [com.firebase:firebase-jobdispatcher:0.7.0] /home/teo/.gradle/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.7.0.aar/cb72b816f542a4a67ce4eb251c814ce9/AndroidManifest.xml:22:5-24:41
+MERGED from [android.arch.persistence.room:runtime:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24f3a9efebaab4121e3c5c19c0c628fc/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.persistence.room:runtime:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24f3a9efebaab4121e3c5c19c0c628fc/AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.support:support-v4:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/1ed012e651d32f2d92fceaea850c97e9/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/1ed012e651d32f2d92fceaea850c97e9/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/effa0bf64109a328f9f212bfe6a3937f/AndroidManifest.xml:20:5-44
@@ -169,6 +175,12 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /home/teo/.gradle/ca
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/fa4ba856f56c48d64235028c297a85db/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/41c9d152ea56c6402ad5951b7f4f3557/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] /home/teo/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/41c9d152ea56c6402ad5951b7f4f3557/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.persistence:db-framework:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/db-framework-1.0.0.aar/9c4992caf8441031604f11ad4ff24f73/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.persistence:db-framework:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/db-framework-1.0.0.aar/9c4992caf8441031604f11ad4ff24f73/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.persistence:db:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/db-1.0.0.aar/6e2664f580041d768cb4d0255a07d060/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.persistence:db:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/db-1.0.0.aar/6e2664f580041d768cb4d0255a07d060/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.core:runtime:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ec48325fccf16639bcc9d9e5268e6a84/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.core:runtime:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ec48325fccf16639bcc9d9e5268e6a84/AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7c0ed455a25a701b8b455d0d27f3e64a/AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/teo/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7c0ed455a25a701b8b455d0d27f3e64a/AndroidManifest.xml:20:5-22:41
 INJECTED from /home/teo/Development/AndroidWorkspace/CodeLabs/ArchComponents/architectureComponentsSunshineStartingCode/architectureComponentsSunshineStartingCode/app/src/main/AndroidManifest.xml
