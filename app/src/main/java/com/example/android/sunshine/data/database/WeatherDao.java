@@ -27,4 +27,12 @@ public interface WeatherDao {
     @Query("SELECT * FROM weather WHERE date = :date")
     LiveData<WeatherEntry> getWeatherByDate(Date date);
 
+    /**
+     * Counts the number of future dates stored in the table.
+     *
+     * @return num of future dates.
+     */
+    @Query("SELECT COUNT(id) FROM weather WHERE date >= :date")
+    int countAllFutureWeather(Date date);
+
 }
