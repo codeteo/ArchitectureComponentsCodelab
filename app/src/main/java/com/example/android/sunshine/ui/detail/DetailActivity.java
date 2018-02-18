@@ -50,13 +50,18 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        viewModel = ViewModelProviders.of(this)
-                .get(DetailActivityViewModel.class);
-
         mDetailBinding = DataBindingUtil.setContentView(this, R.layout.activity_detail);
         long timestamp = getIntent().getLongExtra(WEATHER_ID_EXTRA, -1);
         Date date = new Date(timestamp);
 
+        viewModel = ViewModelProviders.of(this)
+                .get(DetailActivityViewModel.class);
+
+        viewModel.getWeather().observe(this, weatherEntry -> {
+            if (weatherEntry != null) {
+                bindWeatherToUI(weatherEntry);
+            }
+        });
     }
 
     private void bindWeatherToUI(WeatherEntry weatherEntry) {
