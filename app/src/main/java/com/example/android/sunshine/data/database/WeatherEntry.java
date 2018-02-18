@@ -20,6 +20,7 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
+import android.arch.persistence.room.TypeConverters;
 
 import java.util.Date;
 
@@ -30,6 +31,8 @@ public class WeatherEntry {
     private int id;
 
     private int weatherIconId;
+
+    @TypeConverters(DateConverter.class)
     private Date date;
     private double min;
     private double max;
