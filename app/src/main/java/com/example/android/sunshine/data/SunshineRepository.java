@@ -74,7 +74,7 @@ public class SunshineRepository {
      * Creates periodic sync tasks and checks to see if an immediate sync is required. If an
      * immediate sync is required, this method will take care of making sure that sync occurs.
      */
-    public synchronized void initializeData() {
+    private synchronized void initializeData() {
 
         // Only perform initialization once per app lifetime. If initialization has already been
         // performed, we have nothing to do in this method.
@@ -111,6 +111,12 @@ public class SunshineRepository {
 
     private void startFetchWeatherService() {
         mWeatherNetworkDataSource.startFetchWeatherService();
+    }
+
+    public LiveData<WeatherEntry> getWeatherByDate(java.util.Date date) {
+        initializeData();
+
+        return mWeatherDao.getWeatherByDate(date);
     }
 
 }

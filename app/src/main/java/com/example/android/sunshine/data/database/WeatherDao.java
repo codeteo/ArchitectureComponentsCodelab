@@ -1,11 +1,12 @@
 package com.example.android.sunshine.data.database;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * Dao to access weather table .
@@ -24,6 +25,6 @@ public interface WeatherDao {
      * Returns a weather entry searching in weather table by date.
      */
     @Query("SELECT * FROM weather WHERE date = :date")
-    WeatherEntry getWeatherByDate(Date date);
+    LiveData<WeatherEntry> getWeatherByDate(Date date);
 
 }

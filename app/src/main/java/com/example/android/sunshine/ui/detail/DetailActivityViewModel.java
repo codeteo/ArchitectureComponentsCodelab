@@ -16,10 +16,14 @@
 
 package com.example.android.sunshine.ui.detail;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
+import com.example.android.sunshine.data.SunshineRepository;
 import com.example.android.sunshine.data.database.WeatherEntry;
+
+import java.util.Date;
 
 /**
  * {@link ViewModel} for {@link DetailActivity}
@@ -28,16 +32,18 @@ public class DetailActivityViewModel extends ViewModel {
 
     // Weather forecast the user is looking at
     private MutableLiveData<WeatherEntry> mWeather;
+    private SunshineRepository mRepository;
+    private java.util.Date date;
 
-    public DetailActivityViewModel() {
+    public DetailActivityViewModel(SunshineRepository mRepository, Date date) {
+        this.mRepository = mRepository;
+        this.date = date;
+
         mWeather = new MutableLiveData<>();
     }
 
-    public MutableLiveData<WeatherEntry> getWeather() {
-        return mWeather;
+    public LiveData<WeatherEntry> getWeather() {
+        return mRepository.getWeatherByDate(date);
     }
 
-    public void setWeather(WeatherEntry weatherEntry) {
-        mWeather.postValue(weatherEntry);
-    }
 }
