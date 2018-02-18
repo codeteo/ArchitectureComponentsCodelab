@@ -35,4 +35,12 @@ public interface WeatherDao {
     @Query("SELECT COUNT(id) FROM weather WHERE date >= :date")
     int countAllFutureWeather(Date date);
 
+    /**
+     * Deletes entries older than a specific date.
+     *
+     * @param date the date to delete all prior entries.
+     */
+    @Query("DELETE FROM weather WHERE date < :date")
+    void deleteOldWeather(Date date);
+
 }
