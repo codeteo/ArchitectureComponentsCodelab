@@ -16,10 +16,12 @@
 
 package com.example.android.sunshine.data;
 
+import android.arch.lifecycle.LiveData;
 import android.util.Log;
 
 import com.example.android.sunshine.AppExecutors;
 import com.example.android.sunshine.data.database.WeatherDao;
+import com.example.android.sunshine.data.database.WeatherEntry;
 import com.example.android.sunshine.data.network.WeatherNetworkDataSource;
 
 /**
@@ -45,6 +47,13 @@ public class SunshineRepository {
         mWeatherNetworkDataSource = weatherNetworkDataSource;
         mExecutors = executors;
 
+        LiveData<WeatherEntry[]> data = mWeatherNetworkDataSource.getCurrentWeatherForecasts();
+        data.observeForever(weatherEntries -> {
+            mExecutors.diskIO().execute(() -> {
+                mWeatherDao.bulkInsert(weatherEntries);
+                Log.d(LOG_TAG, "New values inserted");
+            });
+        });
     }
 
     public synchronized static SunshineRepository getInstance(
